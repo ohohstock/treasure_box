@@ -63,7 +63,7 @@ export default function App() {
     if (startTimeRef.current === null) startTimeRef.current = Date.now();
     new Audio(clickedBox.hasTreasure ? chestOpenSound : evilLaughSound).play();
 
-    const TREASURE_SCORES = [150, 80, 45];
+    const TREASURE_SCORES = [172, 80, 45];
     const SKELETON_SCORE = -50;
 
     setBoxes((prevBoxes) => {
@@ -102,7 +102,7 @@ export default function App() {
       <div className="text-center mb-8">
         <h1 className="text-4xl mb-4 text-amber-900">🏴‍☠️ Treasure Hunt Game 🏴‍☠️</h1>
         <p className="text-amber-800 mb-4">Click on the treasure chests to discover what's inside!</p>
-        <p className="text-amber-700 text-sm">💰 1st: +$150 &nbsp;|&nbsp; 2nd: +$80 &nbsp;|&nbsp; 3rd: +$45 &nbsp;|&nbsp; 💀 Skeleton: -$50</p>
+        <p className="text-amber-700 text-sm">💰 1st: +$172 &nbsp;|&nbsp; 2nd: +$80 &nbsp;|&nbsp; 3rd: +$45 &nbsp;|&nbsp; 💀 Skeleton: -$50</p>
       </div>
 
       {/* Score */}
